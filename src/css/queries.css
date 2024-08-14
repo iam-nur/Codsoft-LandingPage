@@ -1,0 +1,292 @@
+/******************************/
+/* BELOW 1200PX (Smaller desktops)*/
+/******************************/
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .Get_app_header {
+    font-size: 5.2rem;
+  }
+  .hero_btn {
+    padding: 1.4rem 3.2rem;
+    font-size: 1.8rem;
+  }
+  .btn {
+    padding: 1.6rem 4.8rem;
+  }
+  .featured_logo {
+    height: 3.2rem;
+  }
+  .nav_bar {
+    padding: 0 5rem;
+  }
+
+  .main-nav-list {
+    gap: 7rem;
+  }
+}
+
+@media (max-width: 56.5em) {
+  html {
+    font-size: 50%;
+  }
+  .testimonial_text {
+    font-size: 1.6rem;}
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .hero_header,
+  .hero_txt {
+    text-align: center;
+   
+  }
+  .hero_text {
+    text-align: center;
+  }
+  .hero_txt {
+    margin-top: 1.6rem;
+  }
+  .hero_CTA {
+    margin-top: 3.2rem;
+  }
+  .hero_img {
+    width: 55%;
+    text-align: center;
+  }
+  .hero_section {
+    align-items: center;
+    justify-content: center;
+  }
+  .hero_img_box,
+  .Get_app_img_box {
+    text-align: center;
+    margin-top: 4rem;
+  }
+  h3 {
+    text-align: center;
+  }
+  .grid {
+    gap: 0;
+  }
+  .featured_logo {
+    height: 2.4rem;
+  }
+  .featured {
+    margin-top: 6.4rem;
+  }
+  .analytics_img,
+  .Get_app_img {
+    height: 100%;
+    width: 50%;
+  }
+  .analytics_img_box,
+  .Get_app_img_box,
+  .analytics_header,
+  .analytics_txt,
+  .Get_app_txt {
+    text-align: center;
+  }
+  .analytics_img {
+    margin-right: 0;
+  }
+  .analytics_section {
+    margin-top: 7rem;
+  }
+  .analytics_header,
+  .analytics_txt p,
+  .Get_app_header,
+  .Get_app_txt p {
+    margin: 0 10rem;
+    margin-top: 1.6rem;
+  }
+  .analytics_txt p,
+  .Get_app_txt p {
+    margin-bottom: 2.4rem;
+  }
+  .analytics_txt {
+    margin-top: 2rem;
+  }
+  .testimonial_section {
+    margin-top: 9.6rem;
+  }
+  .testimonials {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 12.8rem;
+  }
+  .footer_resposnse1 {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 8rem;
+    row-gap: 3rem;
+  }
+
+  .footer_CTA {
+    grid-column: -3/-1;
+  }
+  .footer_h3 {
+    text-align: start;
+    margin-left: 2rem;
+  }
+
+  .T_3rd {
+    grid-column: 1 / -1;
+    max-width: 44rem;
+    justify-self: center;
+  }
+  .testimony {
+    padding: 10rem 4rem;
+  }
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .nav_links {
+    background-color: rgba(0, 4, 53, 0.98);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    /* Hide navigation */
+    /* Allows NO transitions at all */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+  .main-nav-list {
+    flex-direction: column;
+    gap: 8rem;
+  }
+
+  .nav_open .nav_links {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav_open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav_open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  } 
+
+  .nav_links a {
+    font-size: 2.4rem;
+  }
+  .nav_bar {
+    padding: 0 4rem;
+  }
+  .testimony_img {
+    width: 12rem;
+  }
+  .featured_logos {
+    height: 7.8rem;
+    }
+}
+
+@media (max-width: 44em) {
+  
+  .testimony_img {
+    width: 11rem;
+  }
+}
+@media (max-width: 34em) {
+  
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+  .testimony {
+    max-width: 44rem;
+    justify-self: center;
+  }
+  .hero_header {
+    margin: 0;
+    font-size: 6.2rem;
+  }
+  .hero_txt {
+    margin: 0 2;
+  }
+  .testimony {
+    padding: 8rem 2rem;
+  }
+  .analytics_header,
+  .analytics_txt p,
+  .Get_app_header,
+  .Get_app_txt p {
+    margin: 0;
+    margin-top: 1.6rem;
+  }
+  .analytics_txt p,
+  .Get_app_txt p {
+    margin-bottom: 2.4rem;
+  }
+  .hero_img,
+  .analytics_img,
+  .Get_app_img {
+    height: 100%;
+    width: 70%;
+  }
+  .testimony_img {
+    width: 10rem;
+  }
+  .testimonials {
+    gap: 8rem;
+  }
+  .get_started_header {
+    font-size: 4.4rem;
+    margin: 0 2rem;
+  }
+  .btn,
+  .hero_btn {
+    font-size: 1.6rem;
+  }
+  .featured_logo {
+    height: 1.6rem;
+  }
+  .footer_resposnse1 {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+  }
+  .footer_CTA {
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
+  .footer_CTA h3 {
+  
+    margin-left: 1rem;
+  }
+  .CTA{
+    margin-bottom: 2rem;
+  }
+
+ 
+  .featured_logos {
+  height: 6rem;
+  }
+  
+}
+/*
+- Font sizes (px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+Spacing system (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+  */
